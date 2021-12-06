@@ -1,0 +1,401 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<HEAD>
+	<TITLE>Country Information Form</TITLE>
+	<style>
+		.header {font-size: 20px;font-weight:bold;}
+		body {font-family: arial; vertical-align: middle;}
+		input {margin-bottom: 10px; margin-right: 10px; height: 40px; border-color: #e8e8e8;}
+		
+		label {margin-right: 10px; display: inline-block; width: 90px;}
+		.wider label {width: 150px; margin-top: 20px;}
+		button {padding: 10px 40px; background-color: #006eff; border-radius: 100px; border-color: transparent; font-size: 13px;margin-top: 10px;color: white; cursor: pointer; margin-right: 10px;}
+		.secondary {}
+		input[type="radio"] { height: auto !important; }
+		select {background: transparent;width: 245px;padding: 5px;font-size: 12px;line-height: 1;height: 34px;margin-bottom: 10px; 
+   }
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+</HEAD>
+<body style='background-color: #FFFFFF;'>
+	<br>
+	<h1>
+		<center>Country Information Form</center>
+	</h1>
+	
+	<div id="pickupInfo">
+		<h3>COUNTRY SELECTION </h3>
+	<div id="country">
+
+		<label>Country</label> 
+		<SELECT onChange="countryInfo('country1')" id="country1Country" VALUE='' class="ui-selectmenu-button">
+			<option  >Select a Country</option>
+			<option capital="Kabul" countrycode="AF" phonecode="93" continent="Asia" currency="AFN" currencysymbol="؋" >Afghanistan</option>
+<option capital="Mariehamn" countrycode="AX" phonecode="358" continent="Europe" currency="EUR" currencysymbol="€" >Aland Islands</option>
+<option capital="Tirana" countrycode="AL" phonecode="355" continent="Europe" currency="ALL" currencysymbol="Lek" >Albania</option>
+<option capital="Algiers" countrycode="DZ" phonecode="213" continent="Africa" currency="DZD" currencysymbol="دج" >Algeria</option>
+<option capital="Pago" countrycode="AS" phonecode="1684" continent="Oceania" currency="USD" currencysymbol="$" >American Samoa</option>
+<option capital="Andorra" countrycode="AD" phonecode="376" continent="Europe" currency="EUR" currencysymbol="€" >Andorra</option>
+<option capital="Luanda" countrycode="AO" phonecode="244" continent="Africa" currency="AOA" currencysymbol="Kz" >Angola</option>
+<option capital="The" countrycode="AI" phonecode="1264" continent="North America "currency="XCD" currencysymbol="$" >Anguilla</option>
+<option capital="Antarctica" countrycode="AQ" phonecode="672" continent="Antarctica" currency="AAD" currencysymbol="$" >Antarctica</option>
+<option capital="St. "countrycode="AG" phonecode="1268" continent="North America "currency="XCD" currencysymbol="$" >Antigua and Barbuda</option>
+<option capital="Buenos "countrycode="AR" phonecode="54" continent="South America "currency="ARS" currencysymbol="$" >Argentina</option>
+<option capital="Yerevan" countrycode="AM" phonecode="374" continent="Asia" currency="AMD" currencysymbol="֏" >Armenia</option>
+<option capital="Oranjestad" countrycode="AW" phonecode="297" continent="North America "currency="AWG" currencysymbol="ƒ" >Aruba</option>
+<option capital="Canberra" countrycode="AU" phonecode="61" continent="Oceania" currency="AUD" currencysymbol="$" >Australia</option>
+<option capital="Vienna" countrycode="AT" phonecode="43" continent="Europe" currency="EUR" currencysymbol="€" >Austria</option>
+<option capital="Baku" countrycode="AZ" phonecode="994" continent="Asia" currency="AZN" currencysymbol="m" >Azerbaijan</option>
+<option capital="Nassau" countrycode="BS" phonecode="1242" continent="North America "currency="BSD" currencysymbol="B$" >Bahamas</option>
+<option capital="Manama" countrycode="BH" phonecode="973" continent="Asia" currency="BHD" currencysymbol=".د.ب" >Bahrain</option>
+<option capital="Dhaka" countrycode="BD" phonecode="880" continent="Asia" currency="BDT" currencysymbol="৳" >Bangladesh</option>
+<option capital="Bridgetown" countrycode="BB" phonecode="1246" continent="North America "currency="BBD" currencysymbol="Bds$" >Barbados</option>
+<option capital="Minsk" countrycode="BY" phonecode="375" continent="Europe" currency="BYN" currencysymbol="Br" >Belarus</option>
+<option capital="Brussels" countrycode="BE" phonecode="32" continent="Europe" currency="EUR" currencysymbol="€" >Belgium</option>
+<option capital="Belmopan" countrycode="BZ" phonecode="501" continent="North America "currency="BZD" currencysymbol="$" >Belize</option>
+<option capital="Porto-Novo" countrycode="BJ" phonecode="229" continent="Africa" currency="XOF" currencysymbol="CFA" >Benin</option>
+<option capital="Hamilton" countrycode="BM" phonecode="1441" continent="North America "currency="BMD" currencysymbol="$" >Bermuda</option>
+<option capital="Thimphu" countrycode="BT" phonecode="975" continent="Asia" currency="BTN" currencysymbol="Nu." >Bhutan</option>
+<option capital="Sucre" countrycode="BO" phonecode="591" continent="South America "currency="BOB" currencysymbol="Bs." >Bolivia</option>
+<option capital="Kralendijk" countrycode="BQ" phonecode="599" continent="North America "currency="USD" currencysymbol="$" >Bonaire, Sint Eustatius and Saba</option>
+<option capital="Sarajevo" countrycode="BA" phonecode="387" continent="Europe" currency="BAM" currencysymbol="KM" >Bosnia and Herzegovina</option>
+<option capital="Gaborone" countrycode="BW" phonecode="267" continent="Africa" currency="BWP" currencysymbol="P" >Botswana</option>
+<option capital="" countrycode="BV" phonecode="55" continent="Antarctica" currency="NOK" currencysymbol="kr" >Bouvet Island</option>
+<option capital="Brasilia" countrycode="BR" phonecode="55" continent="South America "currency="BRL" currencysymbol="R$" >Brazil</option>
+<option capital="Diego "countrycode="IO" phonecode="246" continent="Asia" currency="USD" currencysymbol="$" >British Indian Ocean Territory</option>
+<option capital="Bandar "countrycode="BN" phonecode="673" continent="Asia" currency="BND" currencysymbol="B$" >Brunei Darussalam</option>
+<option capital="Sofia" countrycode="BG" phonecode="359" continent="Europe" currency="BGN" currencysymbol="Лв." >Bulgaria</option>
+<option capital="Ouagadougou" countrycode="BF" phonecode="226" continent="Africa" currency="XOF" currencysymbol="CFA" >Burkina Faso</option>
+<option capital="Bujumbura" countrycode="BI" phonecode="257" continent="Africa" currency="BIF" currencysymbol="FBu" >Burundi</option>
+<option capital="Phnom "countrycode="KH" phonecode="855" continent="Asia" currency="KHR" currencysymbol="KHR" >Cambodia</option>
+<option capital="Yaounde" countrycode="CM" phonecode="237" continent="Africa" currency="XAF" currencysymbol="FCFA" >Cameroon</option>
+<option capital="Ottawa" countrycode="CA" phonecode="1" continent="North America "currency="CAD" currencysymbol="$" >Canada</option>
+<option capital="Praia" countrycode="CV" phonecode="238" continent="Africa" currency="CVE" currencysymbol="$" >Cape Verde</option>
+<option capital="George "countrycode="KY" phonecode="1345" continent="North America "currency="KYD" currencysymbol="$" >Cayman Islands</option>
+<option capital="Bangui" countrycode="CF" phonecode="236" continent="Africa" currency="XAF" currencysymbol="FCFA" >Central African Republic</option>
+<option capital="N'Djamena" countrycode="TD" phonecode="235" continent="Africa" currency="XAF" currencysymbol="FCFA" >Chad</option>
+<option capital="Santiago" countrycode="CL" phonecode="56" continent="South America "currency="CLP" currencysymbol="$" >Chile</option>
+<option capital="Beijing" countrycode="CN" phonecode="86" continent="Asia" currency="CNY" currencysymbol="¥" >China</option>
+<option capital="Flying "countrycode="CX" phonecode="61" continent="Asia" currency="AUD" currencysymbol="$" >Christmas Island</option>
+<option capital="West "countrycode="CC" phonecode="672" continent="Asia" currency="AUD" currencysymbol="$" >Cocos (Keeling) Islands</option>
+<option capital="Bogota" countrycode="CO" phonecode="57" continent="South America "currency="COP" currencysymbol="$" >Colombia</option>
+<option capital="Moroni" countrycode="KM" phonecode="269" continent="Africa" currency="KMF" currencysymbol="CF" >Comoros</option>
+<option capital="Brazzaville" countrycode="CG" phonecode="242" continent="Africa" currency="XAF" currencysymbol="FC" >Congo</option>
+<option capital="Kinshasa" countrycode="CD" phonecode="242" continent="Africa" currency="CDF" currencysymbol="FC" >Congo, Democratic Republic of the Congo</option>
+<option capital="Avarua" countrycode="CK" phonecode="682" continent="Oceania" currency="NZD" currencysymbol="$" >Cook Islands</option>
+<option capital="San "countrycode="CR" phonecode="506" continent="North America "currency="CRC" currencysymbol="₡" >Costa Rica</option>
+<option capital="Yamoussoukro" countrycode="CI" phonecode="225" continent="Africa" currency="XOF" currencysymbol="CFA" >Cote D'Ivoire</option>
+<option capital="Zagreb" countrycode="HR" phonecode="385" continent="Europe" currency="HRK" currencysymbol="kn" >Croatia</option>
+<option capital="Havana" countrycode="CU" phonecode="53" continent="North America "currency="CUP" currencysymbol="$" >Cuba</option>
+<option capital="Willemstad" countrycode="CW" phonecode="599" continent="North America "currency="ANG" currencysymbol="ƒ" >Curacao</option>
+<option capital="Nicosia" countrycode="CY" phonecode="357" continent="Asia" currency="EUR" currencysymbol="€" >Cyprus</option>
+<option capital="Prague" countrycode="CZ" phonecode="420" continent="Europe" currency="CZK" currencysymbol="Kč" >Czech Republic</option>
+<option capital="Copenhagen" countrycode="DK" phonecode="45" continent="Europe" currency="DKK" currencysymbol="Kr." >Denmark</option>
+<option capital="Djibouti" countrycode="DJ" phonecode="253" continent="Africa" currency="DJF" currencysymbol="Fdj" >Djibouti</option>
+<option capital="Roseau" countrycode="DM" phonecode="1767" continent="North America "currency="XCD" currencysymbol="$" >Dominica</option>
+<option capital="Santo "countrycode="DO" phonecode="1809" continent="North America "currency="DOP" currencysymbol="$" >Dominican Republic</option>
+<option capital="Quito" countrycode="EC" phonecode="593" continent="South America "currency="USD" currencysymbol="$" >Ecuador</option>
+<option capital="Cairo" countrycode="EG" phonecode="20" continent="Africa" currency="EGP" currencysymbol="ج.م" >Egypt</option>
+<option capital="San "countrycode="SV" phonecode="503" continent="North America "currency="USD" currencysymbol="$" >El Salvador</option>
+<option capital="Malabo" countrycode="GQ" phonecode="240" continent="Africa" currency="XAF" currencysymbol="FCFA" >Equatorial Guinea</option>
+<option capital="Asmara" countrycode="ER" phonecode="291" continent="Africa" currency="ERN" currencysymbol="Nfk" >Eritrea</option>
+<option capital="Tallinn" countrycode="EE" phonecode="372" continent="Europe" currency="EUR" currencysymbol="€" >Estonia</option>
+<option capital="Addis "countrycode="ET" phonecode="251" continent="Africa" currency="ETB" currencysymbol="Nkf" >Ethiopia</option>
+<option capital="Stanley" countrycode="FK" phonecode="500" continent="South America "currency="FKP" currencysymbol="£" >Falkland Islands (Malvinas)</option>
+<option capital="Torshavn" countrycode="FO" phonecode="298" continent="Europe" currency="DKK" currencysymbol="Kr." >Faroe Islands</option>
+<option capital="Suva" countrycode="FJ" phonecode="679" continent="Oceania" currency="FJD" currencysymbol="FJ$" >Fiji</option>
+<option capital="Helsinki" countrycode="FI" phonecode="358" continent="Europe" currency="EUR" currencysymbol="€" >Finland</option>
+<option capital="Paris" countrycode="FR" phonecode="33" continent="Europe" currency="EUR" currencysymbol="€" >France</option>
+<option capital="Cayenne" countrycode="GF" phonecode="594" continent="South America "currency="EUR" currencysymbol="€" >French Guiana</option>
+<option capital="Papeete" countrycode="PF" phonecode="689" continent="Oceania" currency="XPF" currencysymbol="₣" >French Polynesia</option>
+<option capital="Port-aux-Francais" countrycode="TF" phonecode="262" continent="Antarctica" currency="EUR" currencysymbol="€" >French South Americaern Territories</option>
+<option capital="Libreville" countrycode="GA" phonecode="241" continent="Africa" currency="XAF" currencysymbol="FCFA" >Gabon</option>
+<option capital="Banjul" countrycode="GM" phonecode="220" continent="Africa" currency="GMD" currencysymbol="D" >Gambia</option>
+<option capital="Tbilisi" countrycode="GE" phonecode="995" continent="Asia" currency="GEL" currencysymbol="ლ" >Georgia</option>
+<option capital="Berlin" countrycode="DE" phonecode="49" continent="Europe" currency="EUR" currencysymbol="€" >Germany</option>
+<option capital="Accra" countrycode="GH" phonecode="233" continent="Africa" currency="GHS" currencysymbol="GH₵" >Ghana</option>
+<option capital="Gibraltar" countrycode="GI" phonecode="350" continent="Europe" currency="GIP" currencysymbol="£" >Gibraltar</option>
+<option capital="Athens" countrycode="GR" phonecode="30" continent="Europe" currency="EUR" currencysymbol="€" >Greece</option>
+<option capital="Nuuk" countrycode="GL" phonecode="299" continent="North America "currency="DKK" currencysymbol="Kr." >Greenland</option>
+<option capital="St. "countrycode="GD" phonecode="1473" continent="North America "currency="XCD" currencysymbol="$" >Grenada</option>
+<option capital="Basse-Terre" countrycode="GP" phonecode="590" continent="North America "currency="EUR" currencysymbol="€" >Guadeloupe</option>
+<option capital="Hagatna" countrycode="GU" phonecode="1671" continent="Oceania" currency="USD" currencysymbol="$" >Guam</option>
+<option capital="Guatemala "countrycode="GT" phonecode="502" continent="North America "currency="GTQ" currencysymbol="Q" >Guatemala</option>
+<option capital="St "countrycode="GG" phonecode="44" continent="Europe" currency="GBP" currencysymbol="£" >Guernsey</option>
+<option capital="Conakry" countrycode="GN" phonecode="224" continent="Africa" currency="GNF" currencysymbol="FG" >Guinea</option>
+<option capital="Bissau" countrycode="GW" phonecode="245" continent="Africa" currency="XOF" currencysymbol="CFA" >Guinea-Bissau</option>
+<option capital="Georgetown" countrycode="GY" phonecode="592" continent="South America "currency="GYD" currencysymbol="$" >Guyana</option>
+<option capital="Port-au-Prince" countrycode="HT" phonecode="509" continent="North America "currency="HTG" currencysymbol="G" >Haiti</option>
+<option capital="" countrycode="HM" phonecode="0" continent="Antarctica" currency="AUD" currencysymbol="$" >Heard Island and Mcdonald Islands</option>
+<option capital="Vatican "countrycode="VA" phonecode="39" continent="Europe" currency="EUR" currencysymbol="€" >Holy See (Vatican City State)</option>
+<option capital="Tegucigalpa" countrycode="HN" phonecode="504" continent="North America "currency="HNL" currencysymbol="L" >Honduras</option>
+<option capital="Hong "countrycode="HK" phonecode="852" continent="Asia" currency="HKD" currencysymbol="$" >Hong Kong</option>
+<option capital="Budapest" countrycode="HU" phonecode="36" continent="Europe" currency="HUF" currencysymbol="Ft" >Hungary</option>
+<option capital="Reykjavik" countrycode="IS" phonecode="354" continent="Europe" currency="ISK" currencysymbol="kr" >Iceland</option>
+<option capital="New Delhi "countrycode="IN" phonecode="91" continent="Asia" currency="INR" currencysymbol="₹" >India</option>
+<option capital="Jakarta" countrycode="ID" phonecode="62" continent="Asia" currency="IDR" currencysymbol="Rp" >Indonesia</option>
+<option capital="Tehran" countrycode="IR" phonecode="98" continent="Asia" currency="IRR" currencysymbol="﷼" >Iran, Islamic Republic of</option>
+<option capital="Baghdad" countrycode="IQ" phonecode="964" continent="Asia" currency="IQD" currencysymbol="د.ع" >Iraq</option>
+<option capital="Dublin" countrycode="IE" phonecode="353" continent="Europe" currency="EUR" currencysymbol="€" >Ireland</option>
+<option capital="Douglas, "countrycode="IM" phonecode="44" continent="Europe" currency="GBP" currencysymbol="£" >Isle of Man</option>
+<option capital="Jerusalem" countrycode="IL" phonecode="972" continent="Asia" currency="ILS" currencysymbol="₪" >Israel</option>
+<option capital="Rome" countrycode="IT" phonecode="39" continent="Europe" currency="EUR" currencysymbol="€" >Italy</option>
+<option capital="Kingston" countrycode="JM" phonecode="1876" continent="North America "currency="JMD" currencysymbol="J$" >Jamaica</option>
+<option capital="Tokyo" countrycode="JP" phonecode="81" continent="Asia" currency="JPY" currencysymbol="¥" >Japan</option>
+<option capital="Saint "countrycode="JE" phonecode="44" continent="Europe" currency="GBP" currencysymbol="£" >Jersey</option>
+<option capital="Amman" countrycode="JO" phonecode="962" continent="Asia" currency="JOD" currencysymbol="ا.د" >Jordan</option>
+<option capital="Astana" countrycode="KZ" phonecode="7" continent="Asia" currency="KZT" currencysymbol="лв" >Kazakhstan</option>
+<option capital="Nairobi" countrycode="KE" phonecode="254" continent="Africa" currency="KES" currencysymbol="KSh" >Kenya</option>
+<option capital="Tarawa" countrycode="KI" phonecode="686" continent="Oceania" currency="AUD" currencysymbol="$" >Kiribati</option>
+<option capital="Pyongyang" countrycode="KP" phonecode="850" continent="Asia" currency="KPW" currencysymbol="₩" >Korea, Democratic People's Republic of</option>
+<option capital="Seoul" countrycode="KR" phonecode="82" continent="Asia" currency="KRW" currencysymbol="₩" >Korea, Republic of</option>
+<option capital="Pristina" countrycode="XK" phonecode="381" continent="Europe" currency="EUR" currencysymbol="€" >Kosovo</option>
+<option capital="Kuwait "countrycode="KW" phonecode="965" continent="Asia" currency="KWD" currencysymbol="ك.د" >Kuwait</option>
+<option capital="Bishkek" countrycode="KG" phonecode="996" continent="Asia" currency="KGS" currencysymbol="лв" >Kyrgyzstan</option>
+<option capital="Vientiane" countrycode="LA" phonecode="856" continent="Asia" currency="LAK" currencysymbol="₭" >Lao People's Democratic Republic</option>
+<option capital="Riga" countrycode="LV" phonecode="371" continent="Europe" currency="EUR" currencysymbol="€" >Latvia</option>
+<option capital="Beirut" countrycode="LB" phonecode="961" continent="Asia" currency="LBP" currencysymbol="£" >Lebanon</option>
+<option capital="Maseru" countrycode="LS" phonecode="266" continent="Africa" currency="LSL" currencysymbol="L" >Lesotho</option>
+<option capital="Monrovia" countrycode="LR" phonecode="231" continent="Africa" currency="LRD" currencysymbol="$" >Liberia</option>
+<option capital="Tripolis" countrycode="LY" phonecode="218" continent="Africa" currency="LYD" currencysymbol="د.ل" >Libyan Arab Jamahiriya</option>
+<option capital="Vaduz" countrycode="LI" phonecode="423" continent="Europe" currency="CHF" currencysymbol="CHf" >Liechtenstein</option>
+<option capital="Vilnius" countrycode="LT" phonecode="370" continent="Europe" currency="EUR" currencysymbol="€" >Lithuania</option>
+<option capital="Luxembourg" countrycode="LU" phonecode="352" continent="Europe" currency="EUR" currencysymbol="€" >Luxembourg</option>
+<option capital="Macao" countrycode="MO" phonecode="853" continent="Asia" currency="MOP" currencysymbol="$" >Macao</option>
+<option capital="Skopje" countrycode="MK" phonecode="389" continent="Europe" currency="MKD" currencysymbol="ден" >Macedonia, the Former Yugoslav Republic of</option>
+<option capital="Antananarivo" countrycode="MG" phonecode="261" continent="Africa" currency="MGA" currencysymbol="Ar" >Madagascar</option>
+<option capital="Lilongwe" countrycode="MW" phonecode="265" continent="Africa" currency="MWK" currencysymbol="MK" >Malawi</option>
+<option capital="Kuala "countrycode="MY" phonecode="60" continent="Asia" currency="MYR" currencysymbol="RM" >Malaysia</option>
+<option capital="Male" countrycode="MV" phonecode="960" continent="Asia" currency="MVR" currencysymbol="Rf" >Maldives</option>
+<option capital="Bamako" countrycode="ML" phonecode="223" continent="Africa" currency="XOF" currencysymbol="CFA" >Mali</option>
+<option capital="Valletta" countrycode="MT" phonecode="356" continent="Europe" currency="EUR" currencysymbol="€" >Malta</option>
+<option capital="Majuro" countrycode="MH" phonecode="692" continent="Oceania" currency="USD" currencysymbol="$" >Marshall Islands</option>
+<option capital="Fort-de-France" countrycode="MQ" phonecode="596" continent="North America "currency="EUR" currencysymbol="€" >Martinique</option>
+<option capital="Nouakchott" countrycode="MR" phonecode="222" continent="Africa" currency="MRO" currencysymbol="MRU" >Mauritania</option>
+<option capital="Port "countrycode="MU" phonecode="230" continent="Africa" currency="MUR" currencysymbol="₨" >Mauritius</option>
+<option capital="Mamoudzou" countrycode="YT" phonecode="269" continent="Africa" currency="EUR" currencysymbol="€" >Mayotte</option>
+<option capital="Mexico "countrycode="MX" phonecode="52" continent="North America "currency="MXN" currencysymbol="$" >Mexico</option>
+<option capital="Palikir" countrycode="FM" phonecode="691" continent="Oceania" currency="USD" currencysymbol="$" >Micronesia, Federated States of</option>
+<option capital="Chisinau" countrycode="MD" phonecode="373" continent="Europe" currency="MDL" currencysymbol="L" >Moldova, Republic of</option>
+<option capital="Monaco" countrycode="MC" phonecode="377" continent="Europe" currency="EUR" currencysymbol="€" >Monaco</option>
+<option capital="Ulan "countrycode="MN" phonecode="976" continent="Asia" currency="MNT" currencysymbol="₮" >Mongolia</option>
+<option capital="Podgorica" countrycode="ME" phonecode="382" continent="Europe" currency="EUR" currencysymbol="€" >Montenegro</option>
+<option capital="Plymouth" countrycode="MS" phonecode="1664" continent="North America "currency="XCD" currencysymbol="$" >Montserrat</option>
+<option capital="Rabat" countrycode="MA" phonecode="212" continent="Africa" currency="MAD" currencysymbol="DH" >Morocco</option>
+<option capital="Maputo" countrycode="MZ" phonecode="258" continent="Africa" currency="MZN" currencysymbol="MT" >Mozambique</option>
+<option capital="Nay "countrycode="MM" phonecode="95" continent="Asia" currency="MMK" currencysymbol="K" >Myanmar</option>
+<option capital="Windhoek" countrycode="NA" phonecode="264" continent="Africa" currency="NAD" currencysymbol="$" >Namibia</option>
+<option capital="Yaren" countrycode="NR" phonecode="674" continent="Oceania" currency="AUD" currencysymbol="$" >Nauru</option>
+<option capital="Kathmandu" countrycode="NP" phonecode="977" continent="Asia" currency="NPR" currencysymbol="₨" >Nepal</option>
+<option capital="Amsterdam" countrycode="NL" phonecode="31" continent="Europe" currency="EUR" currencysymbol="€" >Netherlands</option>
+<option capital="Willemstad" countrycode="AN" phonecode="599" continent="North America "currency="ANG" currencysymbol="NAf" >Netherlands Antilles</option>
+<option capital="Noumea" countrycode="NC" phonecode="687" continent="Oceania" currency="XPF" currencysymbol="₣" >New Caledonia</option>
+<option capital="Wellington" countrycode="NZ" phonecode="64" continent="Oceania" currency="NZD" currencysymbol="$" >New Zealand</option>
+<option capital="Managua" countrycode="NI" phonecode="505" continent="North America "currency="NIO" currencysymbol="C$" >Nicaragua</option>
+<option capital="Niamey" countrycode="NE" phonecode="227" continent="Africa" currency="XOF" currencysymbol="CFA" >Niger</option>
+<option capital="Abuja" countrycode="NG" phonecode="234" continent="Africa" currency="NGN" currencysymbol="₦" >Nigeria</option>
+<option capital="Alofi" countrycode="NU" phonecode="683" continent="Oceania" currency="NZD" currencysymbol="$" >Niue</option>
+<option capital="Kingston" countrycode="NF" phonecode="672" continent="Oceania" currency="AUD" currencysymbol="$" >Norfolk Island</option>
+<option capital="Saipan" countrycode="MP" phonecode="1670" continent="Oceania" currency="USD" currencysymbol="$" >North Americaern Mariana Islands</option>
+<option capital="Oslo" countrycode="NO" phonecode="47" continent="Europe" currency="NOK" currencysymbol="kr" >Norway</option>
+<option capital="Muscat" countrycode="OM" phonecode="968" continent="Asia" currency="OMR" currencysymbol=".ع.ر" >Oman</option>
+<option capital="Islamabad" countrycode="PK" phonecode="92" continent="Asia" currency="PKR" currencysymbol="₨" >Pakistan</option>
+<option capital="Melekeok" countrycode="PW" phonecode="680" continent="Oceania" currency="USD" currencysymbol="$" >Palau</option>
+<option capital="East "countrycode="PS" phonecode="970" continent="Asia" currency="ILS" currencysymbol="₪" >Palestinian Territory, Occupied</option>
+<option capital="Panama "countrycode="PA" phonecode="507" continent="North America "currency="PAB" currencysymbol="B/." >Panama</option>
+<option capital="Port "countrycode="PG" phonecode="675" continent="Oceania" currency="PGK" currencysymbol="K" >Papua New Guinea</option>
+<option capital="Asuncion" countrycode="PY" phonecode="595" continent="South America "currency="PYG" currencysymbol="₲" >Paraguay</option>
+<option capital="Lima" countrycode="PE" phonecode="51" continent="South America "currency="PEN" currencysymbol="S/." >Peru</option>
+<option capital="Manila" countrycode="PH" phonecode="63" continent="Asia" currency="PHP" currencysymbol="₱" >Philippines</option>
+<option capital="Adamstown" countrycode="PN" phonecode="64" continent="Oceania" currency="NZD" currencysymbol="$" >Pitcairn</option>
+<option capital="Warsaw" countrycode="PL" phonecode="48" continent="Europe" currency="PLN" currencysymbol="zł" >Poland</option>
+<option capital="Lisbon" countrycode="PT" phonecode="351" continent="Europe" currency="EUR" currencysymbol="€" >Portugal</option>
+<option capital="San "countrycode="PR" phonecode="1787" continent="North America currency="USD" currencysymbol="$" >Puerto Rico</option>
+<option capital="Doha" countrycode="QA" phonecode="974" continent="Asia" currency="QAR" currencysymbol="ق.ر" >Qatar</option>
+<option capital="Saint-Denis" countrycode="RE" phonecode="262" continent="Africa" currency="EUR" currencysymbol="€" >Reunion</option>
+<option capital="Bucharest" countrycode="RO" phonecode="40" continent="Europe" currency="RON" currencysymbol="lei" >Romania</option>
+<option capital="Moscow" countrycode="RU" phonecode="70" continent="Asia" currency="RUB" currencysymbol="₽" >Russian Federation</option>
+<option capital="Kigali" countrycode="RW" phonecode="250" continent="Africa" currency="RWF" currencysymbol="FRw" >Rwanda</option>
+<option capital="Gustavia" countrycode="BL" phonecode="590" continent="North America "currency="EUR" currencysymbol="€" >Saint Barthelemy</option>
+<option capital="Jamestown" countrycode="SH" phonecode="290" continent="Africa" currency="SHP" currencysymbol="£" >Saint Helena</option>
+<option capital="Basseterre" countrycode="KN" phonecode="1869" continent="North America "currency="XCD" currencysymbol="$" >Saint Kitts and Nevis</option>
+<option capital="Castries" countrycode="LC" phonecode="1758" continent="North America "currency="XCD" currencysymbol="$" >Saint Lucia</option>
+<option capital="Marigot" countrycode="MF" phonecode="590" continent="North America "currency="EUR" currencysymbol="€" >Saint Martin</option>
+<option capital="Saint-Pierre" countrycode="PM" phonecode="508" continent="North America "currency="EUR" currencysymbol="€" >Saint Pierre and Miquelon</option>
+<option capital="Kingstown" countrycode="VC" phonecode="1784" continent="North America "currency="XCD" currencysymbol="$" >Saint Vincent and the Grenadines</option>
+<option capital="Apia" countrycode="WS" phonecode="684" continent="Oceania" currency="WST" currencysymbol="SAT" >Samoa</option>
+<option capital="San "countrycode="SM" phonecode="378" continent="Europe" currency="EUR" currencysymbol="€" >San Marino</option>
+<option capital="Sao "countrycode="ST" phonecode="239" continent="Africa" currency="STD" currencysymbol="Db" >Sao Tome and Principe</option>
+<option capital="Riyadh" countrycode="SA" phonecode="966" continent="Asia" currency="SAR" currencysymbol="﷼" >Saudi Arabia</option>
+<option capital="Dakar" countrycode="SN" phonecode="221" continent="Africa" currency="XOF" currencysymbol="CFA" >Senegal</option>
+<option capital="Belgrade" countrycode="RS" phonecode="381" continent="Europe" currency="RSD" currencysymbol="din" >Serbia</option>
+<option capital="Belgrade" countrycode="CS" phonecode="381" continent="Europe" currency="RSD" currencysymbol="din" >Serbia and Montenegro</option>
+<option capital="Victoria" countrycode="SC" phonecode="248" continent="Africa" currency="SCR" currencysymbol="SRe" >Seychelles</option>
+<option capital="Freetown" countrycode="SL" phonecode="232" continent="Africa" currency="SLL" currencysymbol="Le" >Sierra Leone</option>
+<option capital="Singapur" countrycode="SG" phonecode="65" continent="Asia" currency="SGD" currencysymbol="$" >Singapore</option>
+<option capital="Philipsburg" countrycode="SX" phonecode="1" continent="North America "currency="ANG" currencysymbol="ƒ" >Sint Maarten</option>
+<option capital="Bratislava" countrycode="SK" phonecode="421" continent="Europe" currency="EUR" currencysymbol="€" >Slovakia</option>
+<option capital="Ljubljana" countrycode="SI" phonecode="386" continent="Europe" currency="EUR" currencysymbol="€" >Slovenia</option>
+<option capital="Honiara" countrycode="SB" phonecode="677" continent="Oceania" currency="SBD" currencysymbol="Si$" >Solomon Islands</option>
+<option capital="Mogadishu" countrycode="SO" phonecode="252" continent="Africa" currency="SOS" currencysymbol="Sh.so." >Somalia</option>
+<option capital="Pretoria" countrycode="ZA" phonecode="27" continent="Africa" currency="ZAR" currencysymbol="R" >South America Africa</option>
+<option capital="Grytviken" countrycode="GS" phonecode="500" continent="Antarctica" currency="GBP" currencysymbol="£" >South America Georgia and the South America Sandwich Islands</option>
+<option capital="Juba" countrycode="SS" phonecode="211" continent="Africa" currency="SSP" currencysymbol="£" >South America Sudan</option>
+<option capital="Madrid" countrycode="ES" phonecode="34" continent="Europe" currency="EUR" currencysymbol="€" >Spain</option>
+<option capital="Colombo" countrycode="LK" phonecode="94" continent="Asia" currency="LKR" currencysymbol="Rs" >Sri Lanka</option>
+<option capital="Khartoum" countrycode="SD" phonecode="249" continent="Africa" currency="SDG" currencysymbol=".س.ج" >Sudan</option>
+<option capital="Paramaribo" countrycode="SR" phonecode="597" continent="South America "currency="SRD" currencysymbol="$" >Suriname</option>
+<option capital="Longyearbyen" countrycode="SJ" phonecode="47" continent="Europe" currency="NOK" currencysymbol="kr" >Svalbard and Jan Mayen</option>
+<option capital="Mbabane" countrycode="SZ" phonecode="268" continent="Africa" currency="SZL" currencysymbol="E" >Swaziland</option>
+<option capital="Stockholm" countrycode="SE" phonecode="46" continent="Europe" currency="SEK" currencysymbol="kr" >Sweden</option>
+<option capital="Berne" countrycode="CH" phonecode="41" continent="Europe" currency="CHF" currencysymbol="CHf" >Switzerland</option>
+<option capital="Damascus" countrycode="SY" phonecode="963" continent="Asia" currency="SYP" currencysymbol="LS" >Syrian Arab Republic</option>
+<option capital="Taipei" countrycode="TW" phonecode="886" continent="Asia" currency="TWD" currencysymbol="$" >Taiwan, Province of China</option>
+<option capital="Dushanbe" countrycode="TJ" phonecode="992" continent="Asia" currency="TJS" currencysymbol="SM" >Tajikistan</option>
+<option capital="Dodoma" countrycode="TZ" phonecode="255" continent="Africa" currency="TZS" currencysymbol="TSh" >Tanzania, United Republic of</option>
+<option capital="Bangkok" countrycode="TH" phonecode="66" continent="Asia" currency="THB" currencysymbol="฿" >Thailand</option>
+<option capital="Dili" countrycode="TL" phonecode="670" continent="Asia" currency="USD" currencysymbol="$" >Timor-Leste</option>
+<option capital="Lome" countrycode="TG" phonecode="228" continent="Africa" currency="XOF" currencysymbol="CFA" >Togo</option>
+<option capital="" countrycode="TK" phonecode="690" continent="Oceania" currency="NZD" currencysymbol="$" >Tokelau</option>
+<option capital="Nuku'alofa" countrycode="TO" phonecode="676" continent="Oceania" currency="TOP" currencysymbol="$" >Tonga</option>
+<option capital="Port "countrycode="TT" phonecode="1868" continent="North America currency="TTD" currencysymbol="$" >Trinidad and Tobago</option>
+<option capital="Tunis" countrycode="TN" phonecode="216" continent="Africa" currency="TND" currencysymbol="ت.د" >Tunisia</option>
+<option capital="Ankara" countrycode="TR" phonecode="90" continent="Asia" currency="TRY" currencysymbol="₺" >Turkey</option>
+<option capital="Ashgabat" countrycode="TM" phonecode="7370" continent="Asia" currency="TMT" currencysymbol="T" >Turkmenistan</option>
+<option capital="Cockburn "countrycode="TC" phonecode="1649" continent="North America "currency="USD" currencysymbol="$" >Turks and Caicos Islands</option>
+<option capital="Funafuti" countrycode="TV" phonecode="688" continent="Oceania" currency="AUD" currencysymbol="$" >Tuvalu</option>
+<option capital="Kampala" countrycode="UG" phonecode="256" continent="Africa" currency="UGX" currencysymbol="USh" >Uganda</option>
+<option capital="Kiev" countrycode="UA" phonecode="380" continent="Europe" currency="UAH" currencysymbol="₴" >Ukraine</option>
+<option capital="Abu "countrycode="AE" phonecode="971" continent="Asia" currency="AED" currencysymbol="إ.د" >United Arab Emirates</option>
+<option capital="London" countrycode="GB" phonecode="44" continent="Europe" currency="GBP" currencysymbol="£" >United Kingdom</option>
+<option capital="Washington" countrycode="US" phonecode="1" continent="North America "currency="USD" currencysymbol="$" >United States</option>
+<option capital="" countrycode="UM" phonecode="1" continent="North America currency="USD" currencysymbol="$" >United States Minor Outlying Islands</option>
+<option capital="Montevideo" countrycode="UY" phonecode="598" continent="South America "currency="UYU" currencysymbol="$" >Uruguay</option>
+<option capital="Tashkent" countrycode="UZ" phonecode="998" continent="Asia" currency="UZS" currencysymbol="лв" >Uzbekistan</option>
+<option capital="Port "countrycode="VU" phonecode="678" continent="Oceania" currency="VUV" currencysymbol="VT" >Vanuatu</option>
+<option capital="Caracas" countrycode="VE" phonecode="58" continent="South America "currency="VEF" currencysymbol="Bs" >Venezuela</option>
+<option capital="Hanoi" countrycode="VN" phonecode="84" continent="Asia" currency="VND" currencysymbol="₫" >Viet Nam</option>
+<option capital="Road "countrycode="VG" phonecode="1284" continent="North America "currency="USD" currencysymbol="$" >Virgin Islands, British</option>
+<option capital="Charlotte "countrycode="VI" phonecode="1340" continent="North America "currency="USD" currencysymbol="$" >Virgin Islands, U.s.</option>
+<option capital="Mata "countrycode="WF" phonecode="681" continent="Oceania" currency="XPF" currencysymbol="₣" >Wallis and Futuna</option>
+<option capital="El-Aaiun" countrycode="EH" phonecode="212" continent="Africa" currency="MAD" currencysymbol="MAD" >Western Sahara</option>
+<option capital="Sanaa" countrycode="YE" phonecode="967" continent="Asia" currency="YER" currencysymbol="﷼" >Yemen</option>
+<option capital="Lusaka" countrycode="ZM" phonecode="260" continent="Africa" currency="ZMW" currencysymbol="ZK" >Zambia</option>
+<option capital="Harare" countrycode="ZW" phonecode="263" continent="Africa" currency="ZWL" currencysymbol="$" >Zimbabwe</option>
+			
+		</SELECT>
+		<br>
+		</div>
+	</div>
+	
+	
+		
+	
+	
+	
+	<br>
+	<br>
+	<br>
+	<div id="pickupInfo">
+		<h3>COUNTRY DETAILED INFORMATION </h3>
+
+		
+		<label>Capital City</label><INPUT placeholder='Country - Capital City' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1Capital' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+		<br>
+		<label>Country Code</label><INPUT placeholder='Country - Country Code' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1Code' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+	<br>
+		<label>Phone Code</label><INPUT placeholder='Country - Phone Code' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1Pcode' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+	<br>
+		<label>Continent</label><INPUT placeholder='Country - Continent' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1Continent' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+	<br>
+		<label>Currency</label><INPUT placeholder='Country - Currency' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1Currency' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+	<br>
+		<label>Currency Symbol</label><INPUT placeholder='Country - Currency Symbol' TYPE=TEXT SIZE=30 MAXLENGTH=10 id='country1CurrencySymbol' style='padding: 7px 5px 7px 5px; border: 1px solid #d8d8d8;' readonly>
+	
+	<br>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<div>
+		<button onclick='resetFields()' id='reset'>Reset</button>
+	</div>
+	<div id="dialog" >
+  		<p></p>
+	</div>
+	
+
+	
+	 <script
+	  src="https://code.jquery.com/jquery-3.4.0.min.js"
+	  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+	  crossorigin="anonymous"></script>
+	  <script
+	  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+	  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+	  crossorigin="anonymous"></script>
+	<script Language='JavaScript'>
+	function resetFields() {
+		document.getElementById("country1Country").selectedIndex = 0;
+		document.getElementById("country1Capital").value = "Country - Capital City";
+		document.getElementById("country1Code").value = "Country - Country Code";
+		document.getElementById("country1Pcode").value = "Country - Phone Code";
+		document.getElementById("country1Continent").value = "Country - Continent";
+		document.getElementById("country1Currency").value = "Country - Currency";
+		document.getElementById("country1CurrencySymbol").value = "Country - Currency Symbol";;
+
+	}
+	
+	function countryInfo(prefix){
+		var idList = prefix+"Country"
+		
+		
+		var idCapital = prefix+"Capital"
+		var idCode = prefix+"Code"
+		var idPcode = prefix+"Pcode"
+		var idContinent = prefix+"Continent"
+		var idCurrency = prefix+"Currency"
+		var idCurrencySymbol = prefix+"CurrencySymbol"
+		
+		var selectedCountry = document.getElementById(idList);
+		
+		var capital =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("capital");
+		document.getElementById(idCapital).value=capital;
+		
+		var countrycode =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("countrycode");
+		document.getElementById(idCode).value=countrycode;
+		
+		var phonecode =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("phonecode");
+		document.getElementById(idPcode).value=phonecode;
+		
+		var continent =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("continent");
+		document.getElementById(idContinent).value=continent;
+		
+		var currency =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("currency");
+		document.getElementById(idCurrency).value=currency;
+		
+		var currencysymbol =  selectedCountry.options[selectedCountry.selectedIndex].getAttribute("currencysymbol");
+		document.getElementById(idCurrencySymbol).value=currencysymbol;
+		
+		
+
+	}
+
+
+	function showsection(showId,hideId) {
+		
+		var showEl = document.getElementById(showId);
+		showEl.style.display = 'block';    
+		var hideEl = document.getElementById(hideId);
+		hideEl.style.display = 'none';    
+		  
+
+	}
+	
+	
+
+
+	</script>
+
+</body>
+</html>
